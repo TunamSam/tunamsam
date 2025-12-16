@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import logoBlack from '../assets/logo-black-mode.png';
+import logoBright from '../assets/logo-bright-mode.png';
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,11 +26,10 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? 'bg-white/80 backdrop-blur-lg shadow-sm'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -36,11 +37,16 @@ export function Navbar() {
           <div className="flex-shrink-0">
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className={`transition-colors ${
-                isScrolled ? 'text-gray-900' : 'text-white'
-              }`}
+              className={`transition-colors ${isScrolled ? 'text-gray-900' : 'text-white'
+                }`}
             >
-              <span className="text-2xl font-bold tracking-tight">Tunamsam</span>
+              <span className="text-2xl font-bold tracking-tight">
+                <img
+                  src={isScrolled ? logoBlack : logoBright}
+                  alt="Logo"
+                  className="h-[100px] w-auto transition-all duration-300"
+                />
+              </span>
             </button>
           </div>
 
@@ -48,33 +54,29 @@ export function Navbar() {
           <div className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection('services')}
-              className={`transition-colors hover:text-blue-600 ${
-                isScrolled ? 'text-gray-700' : 'text-white'
-              }`}
+              className={`transition-colors hover:text-blue-600 ${isScrolled ? 'text-gray-700' : 'text-white'
+                }`}
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection('portfolio')}
-              className={`transition-colors hover:text-blue-600 ${
-                isScrolled ? 'text-gray-700' : 'text-white'
-              }`}
+              className={`transition-colors hover:text-blue-600 ${isScrolled ? 'text-gray-700' : 'text-white'
+                }`}
             >
               Work
             </button>
             <button
               onClick={() => scrollToSection('process')}
-              className={`transition-colors hover:text-blue-600 ${
-                isScrolled ? 'text-gray-700' : 'text-white'
-              }`}
+              className={`transition-colors hover:text-blue-600 ${isScrolled ? 'text-gray-700' : 'text-white'
+                }`}
             >
               Process
             </button>
             <button
               onClick={() => scrollToSection('pricing')}
-              className={`transition-colors hover:text-blue-600 ${
-                isScrolled ? 'text-gray-700' : 'text-white'
-              }`}
+              className={`transition-colors hover:text-blue-600 ${isScrolled ? 'text-gray-700' : 'text-white'
+                }`}
             >
               Pricing
             </button>
@@ -93,9 +95,8 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`md:hidden transition-colors ${
-              isScrolled ? 'text-gray-900' : 'text-white'
-            }`}
+            className={`md:hidden transition-colors ${isScrolled ? 'text-gray-900' : 'text-white'
+              }`}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
