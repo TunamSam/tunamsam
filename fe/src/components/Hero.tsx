@@ -22,15 +22,15 @@ export function Hero({ onStartProject, onViewWork }: HeroProps) {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32">
         <div className="max-w-3xl">
           {/* Tagline */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-600/20 backdrop-blur-sm border border-blue-400/30 mb-8">
-            <span className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" />
-            <span className="text-blue-200 text-sm">Not just follow, we create</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-600/20 backdrop-blur-sm border border-green-400/30 mb-8">
+            <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+            <span className="text-green-200 text-sm">Not just follow, we create</span>
           </div>
 
           {/* Headline */}
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight tracking-tight">
             Custom Web Solutions
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mt-2">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-400 mt-2">
               Built for Your Vision
             </span>
           </h1>
@@ -45,7 +45,7 @@ export function Hero({ onStartProject, onViewWork }: HeroProps) {
           <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
             <button
               onClick={onStartProject}
-              className="group px-8 py-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all flex items-center gap-2 shadow-lg shadow-blue-600/30 hover:shadow-xl hover:shadow-blue-600/40"
+              className="group px-8 py-4 bg-green-600 text-white rounded-xl hover:bg-green-700 transition-all flex items-center gap-2 shadow-lg shadow-green-600/30 hover:shadow-xl hover:shadow-green-600/40"
             >
               <span>Start Project</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -53,7 +53,7 @@ export function Hero({ onStartProject, onViewWork }: HeroProps) {
 
             <button
               onClick={onViewWork}
-              className="group px-8 py-4 text-white hover:text-blue-400 transition-colors flex items-center gap-2"
+              className="group px-8 py-4 text-white hover:text-green-400 transition-colors flex items-center gap-2"
             >
               <div className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center group-hover:bg-white/20 transition-colors">
                 <Play className="w-4 h-4 fill-current" />

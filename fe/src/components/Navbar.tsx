@@ -54,28 +54,28 @@ export function Navbar() {
           <div className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection('services')}
-              className={`transition-colors hover:text-blue-600 ${isScrolled ? 'text-gray-700' : 'text-white'
+              className={`transition-colors hover:text-green-600 ${isScrolled ? 'text-gray-700' : 'text-white'
                 }`}
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection('portfolio')}
-              className={`transition-colors hover:text-blue-600 ${isScrolled ? 'text-gray-700' : 'text-white'
+              className={`transition-colors hover:text-green-600 ${isScrolled ? 'text-gray-700' : 'text-white'
                 }`}
             >
               Work
             </button>
             <button
               onClick={() => scrollToSection('process')}
-              className={`transition-colors hover:text-blue-600 ${isScrolled ? 'text-gray-700' : 'text-white'
+              className={`transition-colors hover:text-green-600 ${isScrolled ? 'text-gray-700' : 'text-white'
                 }`}
             >
               Process
             </button>
             <button
               onClick={() => scrollToSection('pricing')}
-              className={`transition-colors hover:text-blue-600 ${isScrolled ? 'text-gray-700' : 'text-white'
+              className={`transition-colors hover:text-green-600 ${isScrolled ? 'text-gray-700' : 'text-white'
                 }`}
             >
               Pricing
@@ -86,7 +86,7 @@ export function Navbar() {
           <div className="hidden md:block">
             <button
               onClick={() => scrollToSection('cta')}
-              className="px-6 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              className="px-6 py-2.5 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
             >
               Get Started
             </button>
@@ -109,31 +109,31 @@ export function Navbar() {
           <div className="px-6 py-4 space-y-3">
             <button
               onClick={() => scrollToSection('services')}
-              className="block w-full text-left py-2 text-gray-700 hover:text-blue-600"
+              className="block w-full text-left py-2 text-gray-700 hover:text-green-600"
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection('portfolio')}
-              className="block w-full text-left py-2 text-gray-700 hover:text-blue-600"
+              className="block w-full text-left py-2 text-gray-700 hover:text-green-600"
             >
               Work
             </button>
             <button
               onClick={() => scrollToSection('process')}
-              className="block w-full text-left py-2 text-gray-700 hover:text-blue-600"
+              className="block w-full text-left py-2 text-gray-700 hover:text-green-600"
             >
               Process
             </button>
             <button
               onClick={() => scrollToSection('pricing')}
-              className="block w-full text-left py-2 text-gray-700 hover:text-blue-600"
+              className="block w-full text-left py-2 text-gray-700 hover:text-green-600"
             >
               Pricing
             </button>
             <button
               onClick={() => scrollToSection('cta')}
-              className="w-full mt-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              className="w-full mt-2 px-6 py-2.5 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
             >
               Get Started
             </button>

@@ -38,7 +38,7 @@ export function WhyTunamsam() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Column - Content */}
           <div>
-            <div className="inline-block px-4 py-2 rounded-full bg-blue-600/20 border border-blue-400/30 text-blue-300 text-sm font-medium mb-6">
+            <div className="inline-block px-4 py-2 rounded-full bg-green-600/20 border border-green-400/30 text-green-300 text-sm font-medium mb-6">
               Why Choose Us
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -56,8 +56,8 @@ export function WhyTunamsam() {
                 return (
                   <div key={index} className="flex gap-4">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-lg bg-blue-600/20 border border-blue-400/30 flex items-center justify-center">
-                        <Icon className="w-6 h-6 text-blue-400" />
+                      <div className="w-12 h-12 rounded-lg bg-green-600/20 border border-green-400/30 flex items-center justify-center">
+                        <Icon className="w-6 h-6 text-green-400" />
                       </div>
                     </div>
                     <div>
@@ -73,21 +73,21 @@ export function WhyTunamsam() {
           {/* Right Column - Stats & Visual */}
           <div className="relative">
             {/* Large Stat Card */}
-            <div className="bg-gradient-to-br from-blue-600 to-cyan-600 rounded-3xl p-12 shadow-2xl">
+            <div className="bg-gradient-to-br from-green-600 to-cyan-600 rounded-3xl p-12 shadow-2xl">
               <div className="space-y-8">
                 <div>
                   <div className="text-6xl font-bold mb-2">3+</div>
-                  <div className="text-blue-100">Years of Excellence</div>
+                  <div className="text-green-100">Years of Excellence</div>
                 </div>
                 <div className="h-px bg-white/20" />
                 <div className="grid grid-cols-2 gap-8">
                   <div>
                     <div className="text-3xl font-bold mb-1">Fast</div>
-                    <div className="text-blue-100 text-sm">Delivery Time</div>
+                    <div className="text-green-100 text-sm">Delivery Time</div>
                   </div>
                   <div>
                     <div className="text-3xl font-bold mb-1">24/7</div>
-                    <div className="text-blue-100 text-sm">Support</div>
+                    <div className="text-green-100 text-sm">Support</div>
                   </div>
                 </div>
               </div>

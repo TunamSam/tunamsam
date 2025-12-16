@@ -1,4 +1,5 @@
 import { Github, Twitter, Linkedin, Instagram, Mail, MapPin, Phone } from 'lucide-react';
+import logoBright from '../assets/logo-bright-mode.png';
 
 const navigation = {
   services: [
@@ -35,7 +36,7 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-bold text-white mb-4">Tunamsam</h3>
+            <img src={logoBright} className="h-[200px] mb-6" alt="" />
             <p className="text-gray-400 mb-6 leading-relaxed max-w-md">
               Creating exceptional digital experiences through affordable, custom web 
               development solutions. Not just follow, we create.
