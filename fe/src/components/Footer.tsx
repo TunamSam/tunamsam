@@ -21,10 +21,10 @@ const navigation = {
     { name: 'Contact', href: '#cta' },
   ],
   social: [
-    { name: 'GitHub', icon: Github, href: '#' },
+    { name: 'GitHub', icon: Github, href: 'https://github.com/TunamSam'},
     { name: 'Twitter', icon: Twitter, href: '#' },
-    { name: 'LinkedIn', icon: Linkedin, href: '#' },
-    { name: 'Instagram', icon: Instagram, href: '#' },
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/tunamsam' },
+    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/tunamsam/' },
   ],
 };
 
@@ -38,23 +38,23 @@ export function Footer() {
           <div className="lg:col-span-2">
             <img src={logoBright} className="h-[200px] mb-6" alt="" />
             <p className="text-gray-400 mb-6 leading-relaxed max-w-md">
-              Creating exceptional digital experiences through affordable, custom web 
+              Creating exceptional digital experiences through affordable, custom web
               development solutions. Not just follow, we create.
             </p>
-            
+
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-blue-400" />
-                <span className="text-sm">hello@tunamsam.com</span>
+                <Mail className="w-5 h-5 text-green-400" />
+                <span className="text-sm">tunamsam@gmail.com</span>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-blue-400" />
-                <span className="text-sm">+1 (555) 123-4567</span>
+                <Phone className="w-5 h-5 text-green-400" />
+                <span className="text-sm">+62 851-9590-1406</span>
               </div>
               <div className="flex items-center gap-3">
-                <MapPin className="w-5 h-5 text-blue-400" />
-                <span className="text-sm">San Francisco, CA</span>
+                <MapPin className="w-5 h-5 text-green-400" />
+                <span className="text-sm">Kediri City, Indonesia</span>
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@ export function Footer() {
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="text-gray-400 hover:text-blue-400 transition-colors text-sm"
+                    className="text-gray-400 hover:text-green-400 transition-colors text-sm"
                   >
                     {item.name}
                   </a>
@@ -84,7 +84,7 @@ export function Footer() {
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="text-gray-400 hover:text-blue-400 transition-colors text-sm"
+                    className="text-gray-400 hover:text-green-400 transition-colors text-sm"
                   >
                     {item.name}
                   </a>
@@ -101,7 +101,7 @@ export function Footer() {
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="text-gray-400 hover:text-blue-400 transition-colors text-sm"
+                    className="text-gray-400 hover:text-green-400 transition-colors text-sm"
                   >
                     {item.name}
                   </a>
@@ -129,7 +129,7 @@ export function Footer() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition-colors group"
+                  className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center hover:bg-green-600 transition-colors group"
                   aria-label={item.name}
                 >
                   <Icon className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
@@ -140,10 +140,10 @@ export function Footer() {
 
           {/* Legal Links */}
           <div className="flex items-center gap-6 text-sm">
-            <a href="#" className="text-gray-500 hover:text-blue-400 transition-colors">
+            <a href="#" className="text-gray-500 hover:text-green-400 transition-colors">
               Privacy Policy
             </a>
-            <a href="#" className="text-gray-500 hover:text-blue-400 transition-colors">
+            <a href="#" className="text-gray-500 hover:text-green-400 transition-colors">
               Terms of Service
             </a>
           </div>

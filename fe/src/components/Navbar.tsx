@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import logoBlack from '../assets/logo-black-mode.png';
-import logoBright from '../assets/logo-bright-mode.png';
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,40 +41,40 @@ export function Navbar() {
             >
               <span className="text-2xl font-bold tracking-tight">
                 <img
-                  src={isScrolled ? logoBlack : logoBright}
+                  src={logoBlack}
                   alt="Logo"
-                  className="h-[100px] w-auto transition-all duration-300"
+                  className={`h-[100px] w-auto transition-all duration-300 ${isScrolled ? 'flex' : 'hidden'}`}
                 />
               </span>
             </button>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className={`items-center gap-8 ${isScrolled ? 'hidden md:flex' : 'hidden'}`}>
             <button
               onClick={() => scrollToSection('services')}
-              className={`transition-colors hover:text-green-600 ${isScrolled ? 'text-gray-700' : 'text-white'
+              className={`transition-colors hover:text-green-600 ${isScrolled ? 'text-gray-700' : 'text-black'
                 }`}
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection('portfolio')}
-              className={`transition-colors hover:text-green-600 ${isScrolled ? 'text-gray-700' : 'text-white'
+              className={`transition-colors hover:text-green-600 ${isScrolled ? 'text-gray-700' : 'text-black'
                 }`}
             >
               Work
             </button>
             <button
               onClick={() => scrollToSection('process')}
-              className={`transition-colors hover:text-green-600 ${isScrolled ? 'text-gray-700' : 'text-white'
+              className={`transition-colors hover:text-green-600 ${isScrolled ? 'text-gray-700' : 'text-black'
                 }`}
             >
               Process
             </button>
             <button
               onClick={() => scrollToSection('pricing')}
-              className={`transition-colors hover:text-green-600 ${isScrolled ? 'text-gray-700' : 'text-white'
+              className={`transition-colors hover:text-green-600 ${isScrolled ? 'text-gray-700' : 'text-black'
                 }`}
             >
               Pricing
@@ -83,7 +82,7 @@ export function Navbar() {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
+          <div className={`${isScrolled ? 'hidden flex md:block' : 'hidden'}`}>
             <button
               onClick={() => scrollToSection('cta')}
               className="px-6 py-2.5 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
@@ -95,7 +94,7 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`md:hidden transition-colors ${isScrolled ? 'text-gray-900' : 'text-white'
+            className={`md:hidden transition-colors ${isScrolled ? 'text-gray-900 flex' : 'text-white hidden'
               }`}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

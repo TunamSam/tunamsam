@@ -38,11 +38,11 @@ export function CTA() {
           <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
               <div className="text-green-200 text-sm mb-2">Email Us</div>
-              <div className="text-white font-medium">hello@tunamsam.com</div>
+              <div className="text-white font-medium">tunamsam@gmail.com</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
               <div className="text-green-200 text-sm mb-2">Call Us</div>
-              <div className="text-white font-medium">+1 (555) 123-4567</div>
+              <div className="text-white font-medium">+62 851-9590-1406</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
               <div className="text-green-200 text-sm mb-2">Response Time</div>
