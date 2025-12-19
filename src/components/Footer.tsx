@@ -3,25 +3,25 @@ import logoBright from '../assets/logo-bright-mode.png';
 
 const navigation = {
   services: [
-    { name: 'Web Development', href: '#services' },
-    { name: 'Web Applications', href: '#services' },
-    { name: 'E-Commerce', href: '#services' },
-    { name: 'UI/UX Design', href: '#services' },
+    { name: 'Pembuatan Website', href: '#services' },
+    { name: 'Aplikasi Web', href: '#services' },
+    { name: 'Toko Online (E-Commerce)', href: '#services' },
+    { name: 'Desain UI/UX', href: '#services' },
   ],
   company: [
-    { name: 'About Us', href: '#' },
-    { name: 'Our Work', href: '#portfolio' },
-    { name: 'Process', href: '#process' },
-    { name: 'Pricing', href: '#pricing' },
+    { name: 'Tentang Kami', href: '#' },
+    { name: 'Portofolio Kami', href: '#portfolio' },
+    { name: 'Alur Kerja Kami', href: '#process' },
+    { name: 'Harga Layanan', href: '#pricing' },
   ],
   resources: [
     { name: 'Blog', href: '#' },
-    { name: 'Case Studies', href: '#' },
-    { name: 'FAQs', href: '#' },
-    { name: 'Contact', href: '#cta' },
+    { name: 'Studi Kasus', href: '#' },
+    { name: 'Tanya Jawab (FAQ)', href: '#' },
+    { name: 'Kontak', href: '#cta' },
   ],
   social: [
-    { name: 'GitHub', icon: Github, href: 'https://github.com/TunamSam'},
+    { name: 'GitHub', icon: Github, href: 'https://github.com/TunamSam' },
     { name: 'Twitter', icon: Twitter, href: '#' },
     { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/tunamsam' },
     { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/tunamsam/' },
@@ -36,10 +36,10 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <img src={logoBright} className="h-[200px] mb-6" alt="" />
+            <img src={logoBright} className="h-[200px] mb-6" alt="Tunamsam Logo" />
             <p className="text-gray-400 mb-6 leading-relaxed max-w-md">
-              Creating exceptional digital experiences through affordable, custom web
-              development solutions. Not just follow, we create.
+              Bikin pengalaman digital jadi lebih keren lewat solusi custom web yang terjangkau.
+              Nggak cuma sekadar ikut tren, kita yang buat trennya.
             </p>
 
             {/* Contact Info */}
@@ -54,14 +54,14 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-green-400" />
-                <span className="text-sm">Kediri City, Indonesia</span>
+                <span className="text-sm">Kediri, Jawa Timur, Indonesia</span>
               </div>
             </div>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="text-white font-bold mb-4">Services</h4>
+            <h4 className="text-white font-bold mb-4">Layanan</h4>
             <ul className="space-y-3">
               {navigation.services.map((item) => (
                 <li key={item.name}>
@@ -78,7 +78,7 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="text-white font-bold mb-4">Company</h4>
+            <h4 className="text-white font-bold mb-4">Perusahaan</h4>
             <ul className="space-y-3">
               {navigation.company.map((item) => (
                 <li key={item.name}>
@@ -95,7 +95,7 @@ export function Footer() {
 
           {/* Resources */}
           <div>
-            <h4 className="text-white font-bold mb-4">Resources</h4>
+            <h4 className="text-white font-bold mb-4">Sumber Daya</h4>
             <ul className="space-y-3">
               {navigation.resources.map((item) => (
                 <li key={item.name}>
@@ -118,7 +118,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Copyright */}
           <div className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} Tunamsam. All rights reserved.
+            © {new Date().getFullYear()} Tunamsam. Semua hak cipta dilindungi.
           </div>
 
           {/* Social Links */}
@@ -141,10 +141,10 @@ export function Footer() {
           {/* Legal Links */}
           <div className="flex items-center gap-6 text-sm">
             <a href="#" className="text-gray-500 hover:text-green-400 transition-colors">
-              Privacy Policy
+              Kebijakan Privasi
             </a>
             <a href="#" className="text-gray-500 hover:text-green-400 transition-colors">
-              Terms of Service
+              Syarat & Ketentuan
             </a>
           </div>
         </div>

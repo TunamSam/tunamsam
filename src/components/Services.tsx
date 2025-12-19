@@ -3,38 +3,38 @@ import { Code2, Smartphone, ShoppingCart, Palette, Database, Zap } from 'lucide-
 const services = [
   {
     icon: Code2,
-    title: 'Custom Web Development',
-    description: 'Tailor-made websites built with modern technologies to match your exact requirements.',
+    title: 'Website Sesuai Kebutuhan',
+    description: 'Website yang dibuat khusus dengan teknologi modern, disesuaikan dengan kebutuhan bisnis kamu.',
     color: 'from-blue-500 to-cyan-500',
   },
   {
     icon: Smartphone,
-    title: 'Web Applications',
-    description: 'Powerful, scalable web apps designed for performance and user experience.',
+    title: 'Aplikasi Web',
+    description: 'Aplikasi web yang cepat, stabil, dan nyaman digunakan di berbagai perangkat.',
     color: 'from-purple-500 to-pink-500',
   },
   {
     icon: ShoppingCart,
-    title: 'E-Commerce Solutions',
-    description: 'Complete online stores with payment integration and inventory management.',
+    title: 'Website Toko Online',
+    description: 'Toko online lengkap dengan sistem pembayaran dan pengelolaan produk.',
     color: 'from-orange-500 to-red-500',
   },
   {
     icon: Palette,
-    title: 'UI/UX Design',
-    description: 'Beautiful, intuitive interfaces that users love and convert visitors to customers.',
+    title: 'Desain UI/UX',
+    description: 'Desain tampilan yang menarik, mudah digunakan, dan bikin pengunjung betah.',
     color: 'from-green-500 to-emerald-500',
   },
   {
     icon: Database,
-    title: 'Backend Development',
-    description: 'Robust server-side solutions with secure APIs and database architecture.',
+    title: 'Backend & Database',
+    description: 'Sistem backend yang aman, rapi, dan siap menangani data dengan baik.',
     color: 'from-indigo-500 to-blue-500',
   },
   {
     icon: Zap,
-    title: 'Performance Optimization',
-    description: 'Lightning-fast load times and seamless user experiences across all devices.',
+    title: 'Optimasi Performa',
+    description: 'Website lebih cepat, ringan, dan tetap lancar di semua ukuran layar.',
     color: 'from-yellow-500 to-orange-500',
   },
 ];
@@ -46,14 +46,14 @@ export function Services() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 rounded-full bg-green-100 text-green-700 text-sm font-medium mb-4">
-            What We Do
+            Layanan Kami
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Services That Scale
+            Solusi Digital untuk Bisnis Kamu
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            From concept to launch, we provide comprehensive web development services
-            that help your business thrive online.
+            Dari ide sampai website siap online, kami bantu kamu membangun produk digital
+            yang profesional dan siap berkembang.
           </p>
         </div>
 
@@ -68,7 +68,7 @@ export function Services() {
               >
                 {/* Gradient Background on Hover */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-5 transition-opacity`} />
-                
+
                 {/* Icon */}
                 <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${service.color} mb-6 shadow-lg`}>
                   <Icon className="w-6 h-6 text-white" />

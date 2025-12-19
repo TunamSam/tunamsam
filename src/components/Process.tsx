@@ -4,29 +4,29 @@ const steps = [
   {
     number: '01',
     icon: MessageSquare,
-    title: 'Discovery & Planning',
-    description: 'We start by understanding your goals, target audience, and project requirements through in-depth consultation.',
+    title: 'Diskusi & Perencanaan',
+    description: 'Kami mulai dengan memahami tujuan, target pengguna, dan kebutuhan proyek kamu melalui diskusi mendalam.',
     color: 'from-blue-600 to-cyan-600',
   },
   {
     number: '02',
     icon: Lightbulb,
-    title: 'Design & Prototyping',
-    description: 'Our designers create stunning mockups and interactive prototypes to visualize your project before development.',
+    title: 'Desain & Prototipe',
+    description: 'Tim desain kami membuat tampilan dan prototipe interaktif agar kamu bisa melihat gambaran proyek sebelum dikembangkan.',
     color: 'from-purple-600 to-pink-600',
   },
   {
     number: '03',
     icon: Code,
-    title: 'Development & Testing',
-    description: 'Expert developers bring designs to life with clean code, followed by rigorous testing for quality assurance.',
+    title: 'Pengembangan & Pengujian',
+    description: 'Developer kami mengubah desain menjadi website nyata dengan kode yang rapi, lalu diuji untuk memastikan kualitas.',
     color: 'from-orange-600 to-red-600',
   },
   {
     number: '04',
     icon: Rocket,
-    title: 'Launch & Support',
-    description: 'We deploy your project and provide ongoing support to ensure smooth operation and continued success.',
+    title: 'Peluncuran & Dukungan',
+    description: 'Proyek diluncurkan dan kami siap memberikan dukungan berkelanjutan agar tetap berjalan dengan optimal.',
     color: 'from-green-600 to-emerald-600',
   },
 ];
@@ -38,14 +38,14 @@ export function Process() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-medium mb-4">
-            Our Process
+            Alur Kerja Kami
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            How We Work
+            Cara Kami Bekerja
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            A proven methodology that ensures your project is delivered on time, 
-            on budget, and exceeds your expectations.
+            Proses kerja yang jelas dan terstruktur untuk memastikan proyek kamu
+            selesai tepat waktu, sesuai anggaran, dan hasilnya maksimal.
           </p>
         </div>
 

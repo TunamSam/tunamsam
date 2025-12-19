@@ -26,8 +26,8 @@ export function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-        ? 'bg-white/80 backdrop-blur-lg shadow-sm'
-        : 'bg-transparent'
+          ? 'bg-white/80 backdrop-blur-lg shadow-sm'
+          : 'bg-transparent'
         }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -42,7 +42,7 @@ export function Navbar() {
               <span className="text-2xl font-bold tracking-tight">
                 <img
                   src={logoBlack}
-                  alt="Logo Tunamsam"
+                  alt="Logo"
                   className={`h-[100px] w-auto transition-all duration-300 ${isScrolled ? 'flex' : 'hidden'}`}
                 />
               </span>
@@ -56,28 +56,28 @@ export function Navbar() {
               className={`transition-colors hover:text-green-600 ${isScrolled ? 'text-gray-700' : 'text-black'
                 }`}
             >
-              Layanan
+              Services
             </button>
             <button
               onClick={() => scrollToSection('portfolio')}
               className={`transition-colors hover:text-green-600 ${isScrolled ? 'text-gray-700' : 'text-black'
                 }`}
             >
-              Portofolio
+              Work
             </button>
             <button
               onClick={() => scrollToSection('process')}
               className={`transition-colors hover:text-green-600 ${isScrolled ? 'text-gray-700' : 'text-black'
                 }`}
             >
-              Alur Kerja
+              Process
             </button>
             <button
               onClick={() => scrollToSection('pricing')}
               className={`transition-colors hover:text-green-600 ${isScrolled ? 'text-gray-700' : 'text-black'
                 }`}
             >
-              Harga
+              Pricing
             </button>
           </div>
 
@@ -85,9 +85,9 @@ export function Navbar() {
           <div className={`${isScrolled ? 'hidden flex md:block' : 'hidden'}`}>
             <button
               onClick={() => scrollToSection('cta')}
-              className="px-6 py-2.5 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium"
+              className="px-6 py-2.5 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
             >
-              Mulai Proyek
+              Get Started
             </button>
           </div>
 
@@ -108,33 +108,33 @@ export function Navbar() {
           <div className="px-6 py-4 space-y-3">
             <button
               onClick={() => scrollToSection('services')}
-              className="block w-full text-left py-2 text-gray-700 hover:text-green-600 font-medium"
+              className="block w-full text-left py-2 text-gray-700 hover:text-green-600"
             >
-              Layanan
+              Services
             </button>
             <button
               onClick={() => scrollToSection('portfolio')}
-              className="block w-full text-left py-2 text-gray-700 hover:text-green-600 font-medium"
+              className="block w-full text-left py-2 text-gray-700 hover:text-green-600"
             >
-              Portofolio
+              Work
             </button>
             <button
               onClick={() => scrollToSection('process')}
-              className="block w-full text-left py-2 text-gray-700 hover:text-green-600 font-medium"
+              className="block w-full text-left py-2 text-gray-700 hover:text-green-600"
             >
-              Alur Kerja
+              Process
             </button>
             <button
               onClick={() => scrollToSection('pricing')}
-              className="block w-full text-left py-2 text-gray-700 hover:text-green-600 font-medium"
+              className="block w-full text-left py-2 text-gray-700 hover:text-green-600"
             >
-              Harga
+              Pricing
             </button>
             <button
               onClick={() => scrollToSection('cta')}
-              className="w-full mt-2 px-6 py-2.5 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-bold"
+              className="w-full mt-2 px-6 py-2.5 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
             >
-              Mulai Project
+              Get Started
             </button>
           </div>
         </div>

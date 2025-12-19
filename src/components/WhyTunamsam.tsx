@@ -3,23 +3,23 @@ import { CheckCircle2, Sparkles, Users, TrendingUp } from 'lucide-react';
 const features = [
   {
     icon: CheckCircle2,
-    title: 'Quality First',
-    description: 'Every line of code is crafted with precision and tested thoroughly to ensure excellence.',
+    title: 'Kualitas Nomor Satu',
+    description: 'Setiap baris kode dibuat dengan rapi, teliti, dan diuji dengan baik agar hasilnya maksimal.',
   },
   {
     icon: Sparkles,
-    title: 'Creative Solutions',
-    description: 'We don\'t just follow trends—we create unique experiences that make your brand stand out.',
+    title: 'Solusi Kreatif',
+    description: 'Kami tidak cuma mengikuti tren, tapi menciptakan pengalaman unik agar brand kamu lebih menonjol.',
   },
   {
     icon: Users,
-    title: 'Client-Focused',
-    description: 'Your vision drives our work. We collaborate closely to bring your ideas to reality.',
+    title: 'Fokus ke Klien',
+    description: 'Ide dan kebutuhan kamu jadi prioritas. Kami bekerja bareng untuk mewujudkannya.',
   },
   {
     icon: TrendingUp,
-    title: 'Results-Driven',
-    description: 'We build solutions that not only look great but drive real business growth and ROI.',
+    title: 'Berorientasi Hasil',
+    description: 'Bukan cuma tampilan bagus, tapi juga berdampak nyata untuk pertumbuhan bisnis kamu.',
   },
 ];
 
@@ -39,15 +39,15 @@ export function WhyTunamsam() {
           {/* Left Column - Content */}
           <div>
             <div className="inline-block px-4 py-2 rounded-full bg-green-600/20 border border-green-400/30 text-green-300 text-sm font-medium mb-6">
-              Why Choose Us
+              Kenapa Pilih Kami
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              We Build Digital Experiences That Matter
+              Kami Membangun Pengalaman Digital yang Bermakna
             </h2>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              At Tunamsam, we believe in creating, not just following. Our team combines 
-              technical expertise with creative thinking to deliver web solutions that 
-              exceed expectations.
+              Di Tunamsam, kami percaya untuk menciptakan, bukan sekadar mengikuti.
+              Perpaduan antara keahlian teknis dan kreativitas kami menghasilkan
+              solusi web yang melampaui ekspektasi.
             </p>
 
             <div className="space-y-6">
@@ -77,17 +77,19 @@ export function WhyTunamsam() {
               <div className="space-y-8">
                 <div>
                   <div className="text-6xl font-bold mb-2">3+</div>
-                  <div className="text-green-100">Years of Excellence</div>
+                  <div className="text-green-100">Tahun Pengalaman</div>
                 </div>
+
                 <div className="h-px bg-white/20" />
+
                 <div className="grid grid-cols-2 gap-8">
                   <div>
-                    <div className="text-3xl font-bold mb-1">Fast</div>
-                    <div className="text-green-100 text-sm">Delivery Time</div>
+                    <div className="text-3xl font-bold mb-1">Cepat</div>
+                    <div className="text-green-100 text-sm">Waktu Pengerjaan</div>
                   </div>
                   <div>
                     <div className="text-3xl font-bold mb-1">24/7</div>
-                    <div className="text-green-100 text-sm">Support</div>
+                    <div className="text-green-100 text-sm">Dukungan</div>
                   </div>
                 </div>
               </div>
@@ -101,7 +103,7 @@ export function WhyTunamsam() {
                 </div>
                 <div>
                   <div className="text-2xl font-bold">100%</div>
-                  <div className="text-sm text-gray-600">Satisfaction</div>
+                  <div className="text-sm text-gray-600">Kepuasan Klien</div>
                 </div>
               </div>
             </div>

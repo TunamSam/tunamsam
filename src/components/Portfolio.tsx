@@ -2,23 +2,23 @@ import { ExternalLink, ArrowRight } from 'lucide-react';
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
-    category: 'Web Application',
-    description: 'Modern online store with advanced filtering and secure checkout.',
+    title: 'Platform E-Commerce',
+    category: 'Aplikasi Web',
+    description: 'Toko online modern dengan fitur filter lengkap dan sistem pembayaran yang aman.',
     image: 'https://images.unsplash.com/photo-1763872011479-aa293bf083a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlLWNvbW1lcmNlJTIwd2Vic2l0ZXxlbnwxfHx8fDE3NjU3OTYwMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     tags: ['React', 'Node.js', 'Stripe'],
   },
   {
-    title: 'Analytics Dashboard',
-    category: 'Web Dashboard',
-    description: 'Real-time data visualization with interactive charts and reports.',
+    title: 'Dashboard Analitik',
+    category: 'Dashboard Web',
+    description: 'Visualisasi data real-time dengan grafik dan laporan interaktif.',
     image: 'https://images.unsplash.com/photo-1583932692875-a42450d50acf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXNpZ24lMjBkYXNoYm9hcmR8ZW58MXx8fHwxNzY1ODEyNjg4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     tags: ['Vue.js', 'Charts', 'API'],
   },
   {
-    title: 'Mobile Banking App',
-    category: 'Mobile Web App',
-    description: 'Secure and intuitive mobile banking experience.',
+    title: 'Aplikasi Mobile Banking',
+    category: 'Aplikasi Web Mobile',
+    description: 'Pengalaman mobile banking yang aman, simpel, dan mudah digunakan.',
     image: 'https://images.unsplash.com/photo-1605108222700-0d605d9ebafe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY1ODAwNjU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     tags: ['React Native', 'Security', 'UX'],
   },
@@ -31,14 +31,14 @@ export function Portfolio() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 rounded-full bg-green-100 text-green-700 text-sm font-medium mb-4">
-            Our Work
+            Portofolio Kami
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Featured Projects
+            Proyek Unggulan
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Explore some of our recent work and see how we've helped businesses 
-            transform their digital presence.
+            Lihat beberapa proyek terbaru kami dan bagaimana kami membantu bisnis
+            membangun serta meningkatkan kehadiran digital mereka.
           </p>
         </div>
 
@@ -57,7 +57,7 @@ export function Portfolio() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                
+
                 {/* Hover Overlay */}
                 <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all transform scale-90 group-hover:scale-100">
                   <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg">
@@ -95,7 +95,7 @@ export function Portfolio() {
         {/* View All Button */}
         <div className="text-center">
           <button className="group inline-flex items-center gap-2 px-8 py-4 bg-gray-900 text-white rounded-xl hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl">
-            <span>View All Projects</span>
+            <span>Lihat Semua Proyek</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
