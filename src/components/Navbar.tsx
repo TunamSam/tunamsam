@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import logoBlack from '../assets/logo-black-mode.png';
+import { FaWhatsapp } from "react-icons/fa";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -63,7 +64,7 @@ export function Navbar() {
               className={`transition-colors hover:text-green-600 ${isScrolled ? 'text-gray-700' : 'text-black'
                 }`}
             >
-              Portofolio
+              Produk
             </button>
             <button
               onClick={() => scrollToSection('process')}
@@ -72,22 +73,23 @@ export function Navbar() {
             >
               Alur Kerja
             </button>
-            <button
+            {/* <button
               onClick={() => scrollToSection('pricing')}
               className={`transition-colors hover:text-green-600 ${isScrolled ? 'text-gray-700' : 'text-black'
                 }`}
             >
               Harga
-            </button>
+            </button> */}
           </div>
 
           {/* CTA Button */}
           <div className={`${isScrolled ? 'hidden flex md:block' : 'hidden'}`}>
             <button
               onClick={() => scrollToSection('cta')}
-              className="px-6 py-2.5 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium"
+              className="flex items-center gap-2 px-6 py-2.5 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium"
             >
-              Mulai Proyek
+              <FaWhatsapp size={18} />
+              Hubungi Kami
             </button>
           </div>
 
@@ -124,18 +126,21 @@ export function Navbar() {
             >
               Alur Kerja
             </button>
-            <button
+            {/* <button
               onClick={() => scrollToSection('pricing')}
               className="block w-full text-left py-2 text-gray-700 hover:text-green-600 font-medium"
             >
               Harga
-            </button>
-            <button
-              onClick={() => scrollToSection('cta')}
-              className="w-full mt-2 px-6 py-2.5 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-bold"
-            >
-              Mulai Project
-            </button>
+            </button> */}
+            <div className="pt-4 border-t border-gray-200">
+              <button
+                onClick={() => scrollToSection('cta')}
+                className="w-full flex items-center justify-center gap-2 px-6 py-2.5 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium"
+              >
+                <FaWhatsapp size={18} />
+                Hubungi Kami
+              </button>
+            </div>
           </div>
         </div>
       )}

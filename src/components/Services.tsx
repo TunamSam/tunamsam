@@ -49,10 +49,10 @@ export function Services() {
             Layanan Kami
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Solusi Digital untuk Bisnis Kamu
+            Solusi Digital untuk Bisnis Anda
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Dari ide sampai website siap online, kami bantu kamu membangun produk digital
+            Dari ide sampai website siap online, kami membantu anda membangun produk digital
             yang profesional dan siap berkembang.
           </p>
         </div>
