@@ -3,11 +3,11 @@ import { ExternalLink, ArrowRight } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Platform E-Commerce',
+    title: 'Platform E-Commerce All-in-One',
     category: 'Aplikasi Web',
-    description: 'Toko online modern dengan fitur filter lengkap dan sistem pembayaran yang aman.',
+    description: 'Platform pembelian dan penjualan tiket online yang modern dengan fitur filter lengkap dan sistem pembayaran yang aman.',
     image: 'https://images.unsplash.com/photo-1763872011479-aa293bf083a8?auto=format&fit=crop&w=1080&q=80',
-    tags: ['React', 'Node.js', 'Stripe'],
+    tags: ['Nuxt.js', 'Laravel'],
   },
   {
     title: 'Dashboard Analitik',
