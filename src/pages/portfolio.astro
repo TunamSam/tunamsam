@@ -1,0 +1,115 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+
+const projects = [
+  {
+    name: "SimAntrian System",
+    category: "Dashboard",
+    tech: ["Laravel", "React", "Tailwind"],
+  },
+  {
+    name: "DikSera Landing",
+    category: "Web",
+    tech: ["Next.js", "TypeScript"],
+  },
+  {
+    name: "AutoReply CS",
+    category: "Automation",
+    tech: ["Node.js", "WhatsApp API"],
+  },
+  {
+    name: "Store Catalog",
+    category: "Mini Apps",
+    tech: ["Telegram API", "Astro"],
+  },
+  {
+    name: "RSUD Portal",
+    category: "Web",
+    tech: ["Laravel", "PostgreSQL"],
+  },
+  {
+    name: "Zayssme CI/CD",
+    category: "Automation",
+    tech: ["GitHub Actions", "Docker"],
+  }
+];
+
+const filters = ["All", "Web", "Dashboard", "Automation", "Mini Apps"];
+---
+
+<Layout title="Portfolio | TunamSam">
+  <Navbar />
+  <main class="pt-32 pb-24 px-6 min-h-screen">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 relative">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-primary/20 blur-[100px] rounded-full -z-10"></div>
+        <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tighter">Our Selected <span class="text-primary">Work</span></h1>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+          Eksplorasi berbagai produk digital yang telah kami bangun dengan teknologi modern dan performa tinggi.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-4 mb-12">
+        {filters.map((filter, index) => (
+          <button 
+            class={`filter-btn px-6 py-2 rounded-full font-bold text-sm transition-all duration-300 ${index === 0 ? 'bg-primary text-dark' : 'bg-white/5 text-white border border-white/10 hover:border-primary/50'}`}
+            data-filter={filter}
+          >
+            {filter}
+          </button>
+        ))}
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+        {projects.map(p => (
+          <div class="portfolio-card group cursor-pointer" data-category={p.category}>
+            <div class="aspect-video bg-softdark border border-white/10 rounded-3xl overflow-hidden relative mb-6">
+              <div class="absolute inset-0 bg-linear-to-t from-dark/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                <a href="#" class="bg-primary text-dark px-6 py-2 rounded-full font-bold text-sm hover:scale-105 transition-transform">View Live</a>
+              </div>
+              <div class="w-full h-full flex items-center justify-center text-white/10 italic text-sm">Preview {p.name}</div>
+            </div>
+            <div class="px-2">
+              <p class="text-primary text-xs font-bold uppercase tracking-widest mb-2">{p.category}</p>
+              <h3 class="text-2xl font-bold mb-4 group-hover:text-primary transition-colors">{p.name}</h3>
+              <div class="flex flex-wrap gap-2">
+                {p.tech.map(t => <span class="text-[10px] border border-white/20 px-3 py-1.5 rounded-full text-gray-400 font-medium">{t}</span>)}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>
+
+<script>
+  const buttons = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.portfolio-card');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => {
+        b.classList.remove('bg-primary', 'text-dark');
+        b.classList.add('bg-white/5', 'text-white');
+      });
+      
+      btn.classList.remove('bg-white/5', 'text-white');
+      btn.classList.add('bg-primary', 'text-dark');
+
+      const filter = btn.getAttribute('data-filter');
+
+      cards.forEach(card => {
+        const htmlCard = card as HTMLElement;
+        if (filter === 'All' || htmlCard.getAttribute('data-category') === filter) {
+          htmlCard.style.display = 'block';
+        } else {
+          htmlCard.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
