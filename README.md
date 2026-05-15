@@ -1,43 +1,123 @@
-# Astro Starter Kit: Minimal
+# TunamSam Portfolio Website
 
-```sh
-npm create astro@latest -- --template minimal
+Modern business portfolio website built using Astro and Tailwind CSS.
+
+## Tech Stack
+
+* Astro
+* Tailwind CSS
+* TypeScript
+* Vite
+
+---
+
+# Preview
+
+TunamSam is a modern digital business portfolio focused on:
+
+* Web Development
+* Landing Pages
+* Dashboard Systems
+* Telegram Mini Apps
+* Automation
+* Modern UI/UX
+
+---
+
+# Features
+
+* Responsive Design
+* Modern Dark UI
+* Fast Performance
+* SEO Friendly
+* Smooth Animation
+* Mobile Friendly
+* Clean Folder Structure
+
+---
+
+# Installation
+
+Clone repository:
+
+```bash
+git clone https://github.com/USERNAME/tunamsam.git
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Move into project folder:
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+cd tunamsam
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Install dependencies:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```bash
+npm install
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+Run development server:
 
-## 🧞 Commands
+```bash
+npm run dev
+```
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+# Build Production
 
-## 👀 Want to learn more?
+```bash
+npm run build
+```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Preview production build:
+
+```bash
+npm run preview
+```
+
+---
+
+# Project Structure
+
+```txt
+src/
+├── assets/
+├── components/
+├── layouts/
+├── pages/
+├── styles/
+└── data/
+```
+
+---
+
+# Brand Colors
+
+| Name      | Hex     |
+| --------- | ------- |
+| Primary   | #14B86A |
+| Dark      | #0B0B0B |
+| Soft Dark | #1A1A1A |
+
+---
+
+# Deployment
+
+Recommended platforms:
+
+* Cloudflare Pages
+* Vercel
+* Netlify
+
+---
+
+# License
+
+MIT License
+
+---
+
+# TunamSam
+
+> Not Just Follow, We Create
