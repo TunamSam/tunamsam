@@ -1,0 +1,53 @@
+---
+const services = [
+  {
+    title: "Web Development",
+    desc: "Company profile, landing page, dan dashboard modern dengan performa tinggi.",
+    icon: "💻"
+  },
+  {
+    title: "Telegram Mini Apps",
+    desc: "Pembuatan mini app, integrasi bot, dan otomatisasi untuk ekosistem Telegram.",
+    icon: "🚀"
+  },
+  {
+    title: "UI/UX Design",
+    desc: "Desain antarmuka modern yang responsif dan berfokus pada pengalaman pengguna.",
+    icon: "🎨"
+  },
+  {
+    title: "SEO Optimization",
+    desc: "Optimasi mesin pencari agar website Anda mudah ditemukan dan cepat diakses.",
+    icon: "📈"
+  },
+  {
+    title: "Automation System",
+    desc: "Integrasi API, WhatsApp, dan Telegram untuk efisiensi operasional bisnis.",
+    icon: "⚙️"
+  },
+  {
+    title: "Maintenance",
+    desc: "Pemeliharaan server, pemantauan performa, dan pembaruan sistem berkala.",
+    icon: "🔧"
+  }
+];
+---
+
+<section id="services" class="max-w-7xl mx-auto px-6 py-24">
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-5xl font-bold mb-4">Layanan <span class="text-primary">TunamSam</span></h2>
+    <p class="text-gray-400 max-w-2xl mx-auto">Solusi digital end-to-end untuk kebutuhan bisnis modern Anda.</p>
+  </div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {services.map(s => (
+      <div class="bg-softdark border border-white/10 p-8 rounded-3xl hover:border-primary/50 hover:bg-white/5 transition-all group cursor-pointer">
+        <div class="text-4xl mb-6 bg-dark w-16 h-16 flex items-center justify-center rounded-2xl border border-white/5 group-hover:border-primary/30 group-hover:scale-110 transition-all">
+          {s.icon}
+        </div>
+        <h3 class="text-xl font-bold mb-3 text-white group-hover:text-primary transition-colors">{s.title}</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">{s.desc}</p>
+      </div>
+    ))}
+  </div>
+</section>

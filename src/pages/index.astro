@@ -1,8 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
+import TechStack from "../components/TechStack.astro";
+import Services from "../components/Services.astro";
 import WhyChooseUs from "../components/WhyChooseUs.astro";
 import PortfolioPreview from "../components/PortfolioPreview.astro";
+import Process from "../components/Process.astro";
 import "../styles/global.css";
 ---
 
@@ -57,8 +60,19 @@ import "../styles/global.css";
        </div>
     </section>
 
+    <TechStack />
+    <Services />
     <WhyChooseUs />
     <PortfolioPreview />
+    <Process />
 
-    </main>
+    <section class="max-w-5xl mx-auto px-6 py-32 text-center">
+      <div class="bg-linear-to-r from-primary/20 to-primary/5 border border-primary/30 p-12 md:p-20 rounded-[40px] relative overflow-hidden">
+        <div class="absolute -top-24 -right-24 bg-primary/20 blur-[100px] w-64 h-64 rounded-full"></div>
+        <h2 class="text-4xl md:text-6xl font-bold mb-8">Ready To Build Your Next <span class="text-primary italic">Digital Product?</span></h2>
+        <a href="#contact" class="bg-primary text-dark px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform inline-block">Start Project Now</a>
+      </div>
+    </section>
+
+  </main>
 </Layout>
