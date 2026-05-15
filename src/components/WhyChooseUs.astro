@@ -34,14 +34,12 @@ const features = [
   class="relative py-32 px-6 border-t border-white/5 overflow-hidden"
 >
 
-  <!-- BACKGROUND GLOW -->
   <div class="absolute inset-0 -z-10">
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-125 h-125 bg-primary/5 blur-[120px] rounded-full"></div>
   </div>
 
   <div class="max-w-7xl mx-auto">
 
-    <!-- HEADING -->
     <div class="text-center mb-20 max-w-3xl mx-auto">
       <span class="text-primary text-sm font-bold tracking-[0.2em] uppercase">
         Why Choose Us
@@ -59,7 +57,6 @@ const features = [
       </p>
     </div>
 
-    <!-- FEATURES -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
       {features.map((f) => (
@@ -67,19 +64,16 @@ const features = [
           class="group relative bg-white/3 border border-white/10 rounded-4xl p-8 hover:border-primary/30 hover:bg-white/5 transition-all duration-300 overflow-hidden"
         >
 
-          <!-- CARD GLOW -->
           <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div class="absolute top-0 right-0 w-40 h-40 bg-primary/10 blur-[80px] rounded-full"></div>
           </div>
 
-          <!-- ICON -->
           <div
             class="relative mb-8 w-16 h-16 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:scale-110 group-hover:rotate-6 transition-all duration-300"
           >
             <f.icon class="w-8 h-8 stroke-[1.8]" />
           </div>
 
-          <!-- CONTENT -->
           <h3
             class="text-2xl font-bold mb-4 text-white group-hover:text-primary transition-colors"
           >
