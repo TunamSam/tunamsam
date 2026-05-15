@@ -1,0 +1,46 @@
+---
+const testimonials = [
+  {
+    name: "Alex Rivera",
+    role: "Founder, TechFlow",
+    content: "TunamSam membangun landing page kami hanya dalam hitungan hari. Hasilnya sangat cepat dan modern. Sangat direkomendasikan!",
+    avatar: "AR"
+  },
+  {
+    name: "Sarah Chen",
+    role: "Product Manager, Nexus",
+    content: "Otomatisasi bot Telegram yang mereka buat sangat membantu operasional harian kami. Tech stack-nya benar-benar masa depan.",
+    avatar: "SC"
+  },
+  {
+    name: "Budi Santoso",
+    role: "CEO, MitraDigital",
+    content: "Desainnya clean dan tech-focused. Pas banget dengan branding startup kami yang ingin terlihat premium.",
+    avatar: "BS"
+  }
+];
+---
+
+<section class="max-w-7xl mx-auto px-6 py-24 border-t border-white/5">
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-5xl font-bold mb-4">What They <span class="text-primary italic">Say</span></h2>
+    <p class="text-gray-400">Kepercayaan klien adalah prioritas utama TunamSam.</p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    {testimonials.map(t => (
+      <div class="bg-white/2 border border-white/10 p-8 rounded-3xl backdrop-blur-sm hover:bg-white/4 transition-colors">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-12 h-12 bg-primary/20 border border-primary/50 rounded-full flex items-center justify-center text-primary font-bold">
+            {t.avatar}
+          </div>
+          <div>
+            <h4 class="font-bold text-white leading-none">{t.name}</h4>
+            <p class="text-xs text-gray-500 mt-1">{t.role}</p>
+          </div>
+        </div>
+        <p class="text-gray-400 text-sm leading-relaxed italic">"{t.content}"</p>
+      </div>
+    ))}
+  </div>
+</section>
