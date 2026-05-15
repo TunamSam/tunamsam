@@ -1,34 +1,36 @@
 ---
+import { MonitorSmartphone, Rocket, PenTool, LineChart, Cog, Wrench } from 'lucide-astro';
+
 const services = [
   {
     title: "Web Development",
     desc: "Company profile, landing page, dan dashboard modern dengan performa tinggi.",
-    icon: "💻"
+    icon: MonitorSmartphone
   },
   {
     title: "Telegram Mini Apps",
     desc: "Pembuatan mini app, integrasi bot, dan otomatisasi untuk ekosistem Telegram.",
-    icon: "🚀"
+    icon: Rocket
   },
   {
     title: "UI/UX Design",
     desc: "Desain antarmuka modern yang responsif dan berfokus pada pengalaman pengguna.",
-    icon: "🎨"
+    icon: PenTool
   },
   {
     title: "SEO Optimization",
     desc: "Optimasi mesin pencari agar website Anda mudah ditemukan dan cepat diakses.",
-    icon: "📈"
+    icon: LineChart
   },
   {
     title: "Automation System",
     desc: "Integrasi API, WhatsApp, dan Telegram untuk efisiensi operasional bisnis.",
-    icon: "⚙️"
+    icon: Cog
   },
   {
     title: "Maintenance",
     desc: "Pemeliharaan server, pemantauan performa, dan pembaruan sistem berkala.",
-    icon: "🔧"
+    icon: Wrench
   }
 ];
 ---
@@ -42,8 +44,8 @@ const services = [
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     {services.map(s => (
       <div class="bg-softdark border border-white/10 p-8 rounded-3xl hover:border-primary/50 hover:bg-white/5 transition-all group cursor-pointer">
-        <div class="text-4xl mb-6 bg-dark w-16 h-16 flex items-center justify-center rounded-2xl border border-white/5 group-hover:border-primary/30 group-hover:scale-110 transition-all">
-          {s.icon}
+        <div class="mb-6 bg-dark w-16 h-16 flex items-center justify-center rounded-2xl border border-white/5 group-hover:border-primary/30 group-hover:scale-110 transition-all text-gray-300 group-hover:text-primary">
+          <s.icon class="w-8 h-8 stroke-[1.5]" />
         </div>
         <h3 class="text-xl font-bold mb-3 text-white group-hover:text-primary transition-colors">{s.title}</h3>
         <p class="text-gray-400 text-sm leading-relaxed">{s.desc}</p>
