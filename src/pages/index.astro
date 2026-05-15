@@ -1,10 +1,64 @@
 ---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import WhyChooseUs from "../components/WhyChooseUs.astro";
+import PortfolioPreview from "../components/PortfolioPreview.astro";
 import "../styles/global.css";
 ---
 
-<div class="bg-primary text-white p-10">
-  TunamSam
-</div>
-<div class="absolute inset-0 -z-10 overflow-hidden">
-  <div class="bg-primary/20 blur-[120px] w-[400px] h-[400px] rounded-full absolute top-0 left-1/3"></div>
-</div>
+<Layout title="TunamSam | Modern Digital Agency">
+  <Navbar />
+  
+  <main class="relative">
+    <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden px-6">
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10">
+        <div class="absolute top-[-10%] left-[20%] w-125 h-125 bg-primary/10 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-[10%] right-[10%] w-100 h-100 bg-blue-500/10 blur-[120px] rounded-full"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+        <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full text-xs font-medium text-primary mb-8 animate-fade-in">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+          </span>
+          Available for New Projects
+        </div>
+        
+        <h1 class="text-5xl md:text-8xl font-black leading-[1.1] mb-8 tracking-tighter">
+          We Build Modern <br/>
+          <span class="text-transparent bg-clip-text bg-linear-to-r from-primary to-emerald-400">Digital Experiences</span>
+        </h1>
+        
+        <p class="text-gray-400 text-lg md:text-xl max-w-2xl leading-relaxed mb-10">
+          TunamSam membantu bisnis berkembang melalui website modern, cepat, scalable, dan profesional.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#contact" class="bg-primary text-dark px-10 py-4 rounded-2xl font-bold text-lg hover:shadow-[0_0_30px_rgba(0,255,136,0.3)] transition-all">
+            Start Project
+          </a>
+          <a href="#portfolio" class="bg-white/5 border border-white/10 px-10 py-4 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all backdrop-blur-sm">
+            View Portfolio
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-10 border-y border-white/5 bg-white/1">
+       <div class="max-w-7xl mx-auto px-6">
+          <div class="flex flex-wrap justify-center items-center gap-8 md:gap-20 opacity-40 grayscale">
+             <span class="text-xl font-bold italic">ASTRO</span>
+             <span class="text-xl font-bold italic">TAILWIND</span>
+             <span class="text-xl font-bold italic">REACT</span>
+             <span class="text-xl font-bold italic">NODE.JS</span>
+             <span class="text-xl font-bold italic">CLOUDFLARE</span>
+          </div>
+       </div>
+    </section>
+
+    <WhyChooseUs />
+    <PortfolioPreview />
+
+    </main>
+</Layout>
