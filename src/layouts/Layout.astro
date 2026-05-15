@@ -26,7 +26,40 @@ const {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   </head>
-  <body class="font-['Plus_Jakarta_Sans',sans-serif] antialiased selection:bg-primary/30 selection:text-primary">
+  <body class="font-['Plus_Jakarta_Sans',sans-serif] antialiased selection:bg-primary/30 selection:text-primary relative">
     <slot />
+
+    <button 
+      id="scrollToTopBtn" 
+      aria-label="Scroll to top"
+      class="fixed bottom-8 right-8 z-[100] p-3 rounded-full bg-primary text-dark opacity-0 translate-y-10 pointer-events-none transition-all duration-300 shadow-[0_0_20px_rgba(0,255,163,0.3)] hover:scale-110"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m18 15-6-6-6 6"/>
+      </svg>
+    </button>
+
+    <script>
+      const scrollBtn = document.getElementById('scrollToTopBtn');
+
+      // Tampilkan tombol hanya jika user sudah scroll lebih dari 300px
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+          scrollBtn?.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
+          scrollBtn?.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+        } else {
+          scrollBtn?.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
+          scrollBtn?.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+        }
+      });
+
+      // Kembalikan ke posisi atas dengan animasi smooth
+      scrollBtn?.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    </script>
   </body>
 </html>

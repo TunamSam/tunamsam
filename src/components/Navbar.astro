@@ -1,26 +1,36 @@
 ---
+import tsLogo from "../assets/ts.png";
+import textLogo from "../assets/tunamsam.png";
+
 const navLinks = [
   { name: "Services", href: "/#services" },
   { name: "Portfolio", href: "/#portfolio" },
   { name: "Pricing", href: "/#pricing" },
   { name: "About", href: "/#about" },
+  { name: "Blog", href: "/blog" }
 ];
 ---
 
-<nav class="fixed top-0 left-0 w-full z-100 px-6 py-4">
+<nav class="fixed top-0 left-0 w-full z-50 px-6 py-4">
   <div class="max-w-7xl mx-auto">
     <div class="bg-white/3 backdrop-blur-xl border border-white/10 px-6 py-3 rounded-2xl flex justify-between items-center shadow-2xl">
-      <a href="/" class="flex items-center gap-2 group">
-        <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center font-black text-dark group-hover:rotate-12 transition-transform">
-          T
+
+    <a href="/" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:rotate-16 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(0,255,136,0.35)]">
+            <img
+                src={tsLogo.src}
+                alt="TunamSam Logo"
+                class="w-9 h-9 object-contain"
+            />
         </div>
+
         <span class="text-xl font-bold tracking-tight">Tunam<span class="text-primary">Sam</span></span>
-      </a>
+    </a>
 
       <div class="hidden md:flex items-center gap-8">
         {navLinks.map(link => (
-          <a 
-            href={link.href} 
+          <a
+            href={link.href}
             class="text-sm font-medium text-gray-400 hover:text-primary transition-colors tracking-wide"
           >
             {link.name}
@@ -29,13 +39,14 @@ const navLinks = [
       </div>
 
       <div class="flex items-center gap-4">
-        <a 
-          href="/#contact" 
+        <a
+          href="/#contact"
           class="bg-primary hover:bg-primary/90 text-[#050505] px-5 py-2.5 rounded-xl text-sm font-bold transition-all hover:shadow-[0_0_20px_rgba(0,255,136,0.4)] active:scale-95"
         >
           Start Project
         </a>
       </div>
+
     </div>
   </div>
 </nav>
